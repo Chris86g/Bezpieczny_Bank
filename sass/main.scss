@@ -8,6 +8,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #ebebeb;
 }
 
 .container {
@@ -18,23 +19,32 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-
 }
 
 .log_btn {
-  border-radius: 6px;
   background-color: #50c5da;
+  color: #fff;
+  border: 1px solid #50c5da;
+  border-radius: 6px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
   ul {
     display: flex;
     li {
     	list-style: none;
     	margin: 0;
     	padding: 0;
+      a {
+        text-decoration: none;
+        color: #9d9c9c;
+      }
+      a:active , a:hover {
+        color: #096c7e;
+      }
     }
   }
 }
@@ -47,10 +57,19 @@ nav {
   justify-content: flex-end;
   .banner {
     background-color: #50c5da;
+    color: #fff;
     align-self: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 9px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.23);
+    button {
+      background-color: #272727;
+      color: #fff;
+      border: 1px solid #272727;
+      border-radius: 12px;
+    }
   }
 }
 
@@ -61,6 +80,16 @@ section {
 
 .finance article {
   width: 50%;
+  background-color: #fff;
+  h2 {
+    color: #3a3a3a;
+  }
+  p {
+    color: #8e8e8e;
+  }
+  footer a {
+    color: #50c5da;
+  }
 }
 
 .finance .credit {
@@ -70,19 +99,37 @@ section {
 .offers article {
   width: 33.33%;
   background-color: #50c5da;
+  color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
+  button {
+    border: solid 1px #fff;
+    border-radius: 8px;
+    background-color: #50c5da;
+    color: #fff;
+  }
 }
 
 .lists {
   width: 100%;
-
+  background-color: #fff;
+  color: #717070;
   .list {
     width: 33.33%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    ul {
+      list-style: none;
+      li::before {
+        content: "\25AA";
+        color: #d6d6d6;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
   }
 }
 

@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 90vw;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.log_btn {
+  border-radius: 6px;
+  background-color: #50c5da;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    li {
+    	list-style: none;
+    	margin: 0;
+    	padding: 0;
+    }
+  }
+}
+
+.jumbotron {
+  height: 80vh;
+  background-image: url(../images/jumbotron.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  .banner {
+    background-color: #50c5da;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.finance article {
+  width: 50%;
+}
+
+.finance .credit {
+  display: flex;
+}
+
+.offers article {
+  width: 33.33%;
+  background-color: #50c5da;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lists {
+  width: 100%;
+
+  .list {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    li {
+    	list-style: none;
+    	margin: 0;
+    	padding: 0;
+    }
+  }
+}
